@@ -1,0 +1,457 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+:root {
+  --accent: #505f98;
+  --additional: #111b47;
+  --primary: #fff;
+  --background: #9753b9;
+}
+
+/* Header */
+header {
+  display: flex;
+  background-color: var(--primary);
+  color: var(--accent);
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 35px;
+  padding-top: 30px;
+}
+
+ul {
+  display: flex;
+  margin-left: 165px;
+}
+
+li {
+  list-style: none;
+}
+
+.menu-list a {
+  display: flex;
+  color: var(--accent);
+  width: 38px;
+  height: 24px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  padding-right: 60px;
+  padding-top: 5px;
+}
+
+.menu-list a:hover {
+  color: var(--additional);
+  transition: 0.5s;
+}
+
+h1 {
+  font-size: 34px;
+  font-weight: 900;
+}
+
+.btn-buy {
+  border: none;
+  width: 160px;
+  height: 36px;
+  background: var(--additional);
+  color: var(--primary);
+  text-transform: capitalize;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  margin-right: 165px;
+}
+
+.btn-buy:hover {
+  background-color: var(--accent);
+  transition: 0.5s;
+}
+
+/* Content */
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  color: var(--primary);
+}
+
+.content-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 811px;
+  background: var(--background);
+}
+
+.product {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 21px;
+}
+
+.content-info h2 {
+  width: 467px;
+  height: 240px;
+  font-size: 72px;
+}
+
+.text-info {
+  margin-top: 20px;
+  width: 470px;
+  line-height: 32px;
+}
+
+.main-photo {
+  width: 492px;
+  height: 811px;
+  padding: 20px 35px 0 20px;
+}
+
+.content-photo {
+  background: var(--background);
+  width: 492px;
+  height: 811px;
+}
+
+/* About us */
+.about-us {
+  display: flex;
+  justify-content: space-between;
+  height: 791px;
+  margin-top: 49px;
+}
+
+.gallery {
+  width: 50%;
+  background-image: url(./img/shape.svg);
+  background-repeat: no-repeat;
+  background-position: -115% 60%;
+  background-size: 700px 600px;
+}
+
+.galley-photo-1 {
+  position: absolute;
+  width: 370px;
+  left: 138px;
+  top: 1010px;
+}
+
+.galley-photo-2 {
+  position: absolute;
+  width: 390px;
+  height: 410px;
+  left: 254px;
+  top: 1242px;
+}
+
+.content-gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 40px;
+}
+
+.content-gallery h2 {
+  width: 467px;
+  height: 200px;
+  font-size: 56px;
+  line-height: 64px;
+}
+
+.content-gallery .text-info {
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.text-after-number {
+  width: 128px;
+  font-size: 20px;
+  line-height: 32px;
+  padding-bottom: 10px;
+}
+
+.text-content {
+  width: 370px;
+  padding-bottom: 20px;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+/* Reclam Section */
+.reclam {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 480px;
+  background-image: url(./img/samsung-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  margin: 10% 0 10% 0;
+}
+
+.reclam-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 65px;
+}
+
+.reclam-container h2 {
+  width: 467px;
+  height: 200px;
+  font-size: 46px;
+  line-height: 64px;
+}
+
+/* Contact Section */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact h2 {
+  font-size: 72px;
+  margin-bottom: 5%;
+}
+
+.contact-container {
+  display: flex;
+  width: 50%;
+}
+
+.address,
+.phone {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+}
+
+.address li,
+.phone li {
+  margin-bottom: 20px;
+}
+
+.address {
+  margin-left: auto;
+}
+
+.phone {
+  margin-left: auto;
+}
+
+.btn-contact {
+  border: 1px solid grey;
+  text-transform: uppercase;
+  margin: 5% 0 5% 0;
+  width: 170px;
+  height: 48px;
+  font-size: 16px;
+  background-color: var(--primary);
+  cursor: pointer;
+}
+
+.btn-contact:hover {
+  color: var(--primary);
+  background-color: var(--accent);
+  transition: 0.5s;
+  border: none;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  background-color: var(--background);
+  height: 332px;
+}
+
+.footer-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding-top: 5%;
+  color: var(--primary);
+}
+
+.footer-container h2 {
+  font-size: 34px;
+  font-weight: 900;
+}
+
+.menu,
+.product-list,
+.social {
+  display: flex;
+  flex-direction: column;
+}
+
+.click {
+  cursor: pointer;
+}
+
+.footer-container a {
+  color: var(--primary);
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.footer-container a:hover {
+  color: var(--additional);
+}
+
+/* Adaptive design */
+
+/* phone */
+@media (max-width: 768px) {
+  /* Header */
+  header {
+    flex-direction: column;
+  }
+
+  ul {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  li {
+    margin-bottom: 15px;
+  }
+
+  .home,
+  .about {
+    margin-left: 5px;
+  }
+
+  .btn-buy {
+    margin-top: 25px;
+    margin-left: 165px;
+  }
+
+  /* Hero Section */
+  .hero {
+    flex-direction: column;
+  }
+
+  .main-photo {
+    position: absolute;
+    left: 125px;
+  }
+
+  .content-photo {
+    width: 714px;
+    height: 811px;
+  }
+
+  /* About us */
+  .about-us {
+    flex-direction: column;
+    height: 1256px;
+  }
+
+  .gallery {
+    padding: 300px;
+    background-position: 145px 150px;
+    background-size: 65%;
+  }
+
+  .galley-photo-1 {
+    top: 2010px;
+  }
+
+  .galley-photo-2 {
+    top: 2216px;
+    left: 254px;
+    width: 290px;
+    height: 310px;
+  }
+
+  .content-gallery-header {
+    padding-top: 90px;
+  }
+
+  /* Reclam Section */
+  .reclam h2 {
+    font-size: 32px;
+    width: 335px;
+  }
+}
+
+/* tablets */
+@media (max-width: 960px) {
+  /* Hero Section */
+  .text-info {
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+
+  .content-hero-main h2 {
+    font-size: 62px;
+  }
+
+  /* About us */
+  .about-us {
+    flex-direction: column;
+    height: 1256px;
+  }
+
+  .gallery {
+    padding: 325px;
+    background-position: 230px 159px;
+    background-size: 65%;
+  }
+
+  .galley-photo-1 {
+    top: 1090px;
+    left: 225px;
+  }
+
+  .galley-photo-2 {
+    top: 1290px;
+    left: 370px;
+    width: 290px;
+    height: 310px;
+  }
+
+  .content-gallery-header {
+    padding-top: 90px;
+  }
+}
+
+/* laptop */
+@media (max-width: 1200px) {
+  /* About us */
+  .gallery {
+    padding: 325px;
+    background-position: 130px 159px;
+    background-size: 65%;
+  }
+
+  .galley-photo-1 {
+    top: 1090px;
+    left: 150px;
+  }
+
+  .galley-photo-2 {
+    top: 1290px;
+    left: 270px;
+    width: 290px;
+    height: 310px;
+  }
+
+  .content-gallery {
+    margin-right: auto;
+  }
+}
